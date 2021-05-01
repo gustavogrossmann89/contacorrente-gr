@@ -1,0 +1,437 @@
+{
+	"info": {
+		"_postman_id": "f47f8628-d888-466b-aaa2-2e9471ff2a12",
+		"name": "Conta Corrente Simples - PF e PJ - Spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Pessoas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pessoas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PessoasFisicas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pessoasfisicas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pessoasfisicas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE PessoaFisica",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Pessoa Fisica 1\",\n    \"cpf\": \"80658678043\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pessoasfisicas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pessoasfisicas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ALTER PessoaFisica",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Pessoa Fisica 1 - Alteracao\",\n    \"cpf\": \"30155365088\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pessoasfisicas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pessoasfisicas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PessoasJuridicas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pessoasjuridicas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pessoasjuridicas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE PessoaJuridica",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Pessoa Juridica 1\",\n    \"cnpj\": \"37615876000152\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pessoasjuridicas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pessoasjuridicas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ALTER PessoaJuridica",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Pessoa Juridica 2 - Alteração\",\n    \"cnpj\": \"37615876000152\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pessoasjuridicas/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pessoasjuridicas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Agencias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/agencias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"agencias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE Agencia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numero\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/agencias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"agencias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ContasCorrentes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/contascorrentes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"contascorrentes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE ContaCorrente em Agencia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numero\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/agencias/1/contascorrentes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"agencias",
+						"1",
+						"contascorrentes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ContasCorrentes de uma Agencia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/agencias/1/contascorrentes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"agencias",
+						"1",
+						"contascorrentes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposito em ContaCorrente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"valor\": 50000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/contascorrentes/1/deposito",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"contascorrentes",
+						"1",
+						"deposito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Saque em ContaCorrente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"valor\": 15000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/contascorrentes/1/saque",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"contascorrentes",
+						"1",
+						"saque"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ContaCorrente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/contascorrentes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"contascorrentes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Saldo ContaCorrente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/contascorrentes/1/saldo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"contascorrentes",
+						"1",
+						"saldo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Extrato ContaCorrente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/contascorrentes/1/extrato",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"contascorrentes",
+						"1",
+						"extrato"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
